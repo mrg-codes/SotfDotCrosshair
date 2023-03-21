@@ -1,7 +1,9 @@
-﻿using BepInEx.Unity.IL2CPP;
-using BepInEx;
+﻿using BepInEx;
 using UnityEngine;
 using Il2CppInterop.Runtime.Injection;
+using BepInEx.Unity.IL2CPP;
+using BepInEx.Unity.IL2CPP.UnityEngine;
+using System.IO;
 
 namespace SotfDotCrosshair
 {
@@ -40,7 +42,7 @@ namespace SotfDotCrosshair
             // Execute this code every frame
 
             // Check for key input (UnityEngine.InputLegacy)
-            if (Input.GetKeyDown(KeyCode.Keypad1))
+            if (UnityEngine.Input.GetKeyDown(UnityEngine.KeyCode.Keypad1))
             {
                 // Do something
             }
